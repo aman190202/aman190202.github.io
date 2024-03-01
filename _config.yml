@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Xiaodong Cun
+name: Aman Agarwal
 
 # Short bio or description (displayed in the header)
-description: Researcher in Computer Photography
+description: 3D Vision Researcher
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://vinthony.github.io/academicpages.github.io//images/avatar.jpg
+avatar: /Users/aman/Developer/samplewebsite/images/VIDEO-2023-11-16-00-36-06-ezgif.com-video-to-gif-converter.gif
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://vinthony.github.io/academicpages.github.io//images/avatar.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: agarwalaman190202@gmail.com
   facebook:
   flickr:
-  github: vinthony
+  github: aman190202
   instagram:
-  linkedin:
+  linkedin: aman190202
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter: aman_shakesbeer
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -41,13 +41,13 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://vinthony.github.io/academic/
+url: https://aman190202.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/academic"
+baseurl: 
 
 #
 # !! You don't need to change any of the configuration flags below !!
