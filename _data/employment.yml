@@ -1,0 +1,43 @@
+- company: Indian Institute of Science 
+  advisor: Dr. Rajiv Soundarajan
+  advisor_link : https://ece.iisc.ac.in/~rajivs/#/
+  title: Research Intern | Visual Information Processing Lab
+  description : Researching methods to improve sparse-input Gaussian splatts.
+  # description:
+  #   - Benchmarking performances of sparse view gaussian splatting without depth priors
+  #   - I am currently a research intern in the Visual Image Processing Lab at IISc Bangalore, 
+  #   - working with Nagabhushan Somraj, under the advisory of Dr. Rajiv Soundararajan. I will be completing my B.Tech degree in Computer Science and Engineering from S.R.M University in May of 2024. I have previously led the Machine Learning division at the Next Tech Lab at SRM Institute of Science and Technology, guiding over 30+ students on the path to Deep Learning research over my course of leading the lab for almost three years.
+
+  dates: "Jan 2024 - Present"
+  location: Bengaluru, India
+  logo: images/IISc_Master_Seal_Black_Transparent.png
+
+- company: Stanford Vision Lab
+  title: Research Intern | Stanford Vision Lab
+  advisor: Dr. Jiajun Wu
+  advisor_link : https://jiajunwu.com
+  description : Creating streamable-NeRFs
+  dates: "Oct 2023 - Present"
+  location: Stanford, California
+  logo: images/stanford.png
+
+- company: Carnegie Mellon University
+  title: Research Intern | Xu Lab
+  advisor : Dr. Min Xu
+  advisor_link : https://cbd.cmu.edu/people/xu.html
+  description:
+    - Developed methodologies to detect possibility of cancer cells in carbon nanotube forests.
+  dates: "Aug 2023 - Nov 2023"
+  location: Pittsburgh, Pennsylvania
+  logo: images/png-transparent-carnegie-mellon-university-in-qatar-carnegie-mellon-school-of-computer-science-integrated-innovation-institute-cornell-university-student-text-people-logo.png
+
+- company: FAU Germany
+  title: Research Intern | Factory of Automation and Production Systems
+  advisor : Kedilioglu Oguz
+  advisor_link : https://www.faps.fau.eu/person/oguz-kedilioglu/
+  description:
+    - Led research on a 6-DoF pose estimation model for metallic objects, eliminating the need for fiducial markers and modified compilation files for computer vision libraries.
+  dates: "Oct 2022 - May 2023"  
+  location: Erlangen, Bavaria
+  logo: /images/Friedrich_Alexander_University_of_Erlangen-Nuremberg_Seal_2022.png
+
