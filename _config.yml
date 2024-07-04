@@ -1,0 +1,34 @@
+title: Aman Agarwal
+email: aman_agarwal1@brown.edi
+url: aman190202.github.io
+baseurl: ""
+
+# Social media links
+github_username:  aman190202
+linkedin_username: aman190202
+
+markdown: kramdown
+# ins_logo: "./bits-logo.png"
+
+# Build settings
+remote_theme: jekyll/minima
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+
+collections:
+  projects:
+    output: true
+    order:
+      - test.md
+
+minima:
+  date_format: "%b %-d, %Y"
+  skin: auto
+  
+google_analytics: G-YY5TFPFSPX
+
+nav:
+ - name: "Resume"
+   link: "cv.pdf"

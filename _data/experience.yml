@@ -1,0 +1,16 @@
+
+# ---------------------------------------------------------------
+# Indian Institue of Science
+# ---------------------------------------------------------------
+- year: "2024"
+  logo: "./assets/images-2.png"
+  title: "Research Intern : Augmented Gaussian Splatting & NeRFs"
+  description : Conducted ablation studies <a href="https://github.com/VITA-Group/FSGS"> FSGS - Real-Time Few-Shot View Synthesis using Gaussian Splatting </a> to calculate the efficiency of priors used in the paper and researched on effects of augemented networks in NeRFs & Gaussian Splatting 
+
+# ---------------------------------------------------------------
+# Stanford Vision Lab
+# ---------------------------------------------------------------
+- year: "2023"
+  logo: "assets/Stanford-University-Logo.png"
+  title: "Research Intern : Integrated NeRF-Capture into Zip-NeRF"
+  description : Integrated <a href="https://github.com/jc211/NeRFCapture"> NeRFCapture</a>, an app that use Apple's ARKit to computer poses of photos simultaneously as they captured, into the (unofficial) <a href="https://github.com/SuLvXiangXin/zipnerf-pytorch">Zip-NeRF</a> pipeline to study accuracy of pre-computed poses over COLMAP and attempting to reduce entire pre-processing time to over 50%.
