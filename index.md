@@ -120,6 +120,10 @@ I am an upcoming CS Grad at Brown, joining the program this Fall. My primary res
 
 <tr>
     <td><div>
+	    <a href="https://github.com/aman190202/neural_fields_bvc">
+            <i class="fa fa-github" aria-hidden="true"></i> Neural Fields with encoding:</a> A comparision of different encoding methods for 2D inputs
+            <br> 
+            <br> 
         <a href="https://github.com/aman190202/LovingVincentt">
 			<i class="fa fa-github" aria-hidden="true"></i> Loving Vincet:</a> Convert your videos into moving paintings of your choice
             <br> 
