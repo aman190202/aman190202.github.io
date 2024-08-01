@@ -4,7 +4,7 @@ layout: default
 
 ## About Me
 <tr>
-    <td> <img class="profile-picture" src="me.jpg"></td>
+    <td> <img class="profile-picture" src="me2.gif"></td>
     <td><div class="profile-doc">
 		Msc @ Brown University <br>
         Visual Computing & AI<br>
