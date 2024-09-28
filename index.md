@@ -6,24 +6,31 @@ layout: default
 <tr>
     <td> <img class="profile-picture" src="me2.gif"></td>
     <td><div class="profile-doc">
-		Msc @ Brown University <br>
+		Sc.M. @ Brown University <br>
         Visual Computing & AI<br>
 		<br> 
-		<a href="mailto:aman_agarwal1@brown.edu">
-			<i class="fa fa-envelope" aria-hidden="true"></i> aman_agarwal1@brown.edu</a> <br> 
+		<a href="mailto:amanag1@brown.edu">
+			<i class="fa fa-envelope" aria-hidden="true"></i> amanag@brown.edu</a> <br> 
 		<a href="https://github.com/aman190202">
 			<i class="fa fa-github" aria-hidden="true"></i> Github </a> <br> 
 		<!-- <a href="https://scholar.google.com/citations?user=9ixpc8MAAAAJ&hl=en&oi=ao">
 			<i class="fa fa-google" aria-hidden="true"></i> Google Scholar </a> <br>  -->
 		<a href="https://www.linkedin.com/in/aman190202/">
-			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a>
+			<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn </a> <br> 
+		<a href="https://antimatter15.com/splat/?url=https://aman190202.github.io/model-5.splat">
+			<i aria-hidden="true"></i> 💻 Watch me in 3D</a>
             <br>
 			<br>
 	</div></td>
 </tr>
 
-I am an upcoming CS Grad at Brown, joining the program this Fall. My primary research interests are Computer Vision and Graphics, particulary in the emerging field of Inverse rendering via Neural Fields such as [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+A CS Grad student at Brown studying [Computer Vision](https://browncsci1430.github.io) and [Computer Graphics](https://cs1230.graphics). My primary research interests are Computer Vision and Graphics, particulary in the emerging field of Inverse rendering via Neural Fields such as [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
+### Updates : 
+1. Begun my Masters at Brown University, USA [2024-Present]
+2. Completed Undergrad at SRM University, India [2020-2024]
+
+---
 ## Experience
 {% assign years = site.data.experience | group_by:"year" | sort: "name" | reverse %}
 
