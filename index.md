@@ -5,6 +5,9 @@ layout: default
 ## About Me
 <tr>
     <td> <img class="profile-picture" src="me2.gif"></td>
+	<!-- <td>
+		<iframe src="https://antimatter15.com/splat/?url=https://aman190202.github.io/model-5.splat" width="300" height="300" style="border:none;  float: right;"></iframe>
+	</td> -->
     <td><div class="profile-doc">
 		Sc.M. @ Brown University <br>
         Visual Computing & AI<br>
@@ -123,7 +126,7 @@ A CS Grad student at Brown studying [Computer Vision](https://browncsci1430.gith
 {% endfor %} -->
 
 ---
-## Projects
+<!-- ## Projects
 
 <tr>
     <td><div>
@@ -144,7 +147,58 @@ A CS Grad student at Brown studying [Computer Vision](https://browncsci1430.gith
             <br>
 			<br> 
 	</div></td>
-</tr>
+</tr> -->
+
+## Projects
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+	<!-- Project 1 -->
+    <div style="text-align: center;">
+        <a href="https://github.com/aman190202/Clouds" style="text-decoration: none;">
+            <video controls style="width: 100%; border-radius: 10px;">
+ 				 <source src="assets/FullHD.mp4" type="video/mp4">Your browser does not support the video tag.
+			</video>
+            <h3>Volummetric Rendering for Clouds & Procuderal Terrain, on OpenMP</h3>
+        </a>
+        <p>
+			Designed and implemented a custom ray-marcher and ray-tracer from scratch to render realistic clouds and generate procedural terrain. The rendered scene includes dynamic interactions with point lights, creating visually accurate and immersive effects.
+        </p>
+    </div>
+	<!-- Project 2 -->
+    <div style="text-align: center;">
+        <a href="https://github.com/aman190202/small_NeRF" style="text-decoration: none;">
+            <img src="assets/img_0_21.png" alt="Neural Radiance Fields" style="width: auto; border-radius: 10px; height: 200px;">
+            <h3>Implemented NeRFs</h3>
+        </a>
+        <p>Implemented the <a href="https://arxiv.org/abs/2003.08934">Neural Radiance Fields</a> paper by Ben Mildenhall et al. ; Removed heirarical sampling to reduce complexity while maintaining PSNR scores.</p>
+    </div>
+    <!-- Project 3 -->
+    <div style="text-align: center;">
+        <a href="https://github.com/aman190202/neural_fields_bvc" style="text-decoration: none;">
+            <img src="assets/output2.png" alt="Neural Fields Thumbnail" style="width: auto; border-radius: 10px; height: 200px;">
+            <h3>Neural Fields with Encoding</h3>
+        </a>
+        <p>A comparison of different encoding methods for 2D inputs</p>
+    </div>
+    <!-- Project 4 -->
+    <div style="text-align: center;">
+        <a href="https://github.com/aman190202/LovingVincentt" style="text-decoration: none;">
+            <img src="assets/ezgif.com-gif-maker.gif" alt="Loving Vincent Thumbnail" style="width: auto; border-radius: 10px; height: 200px;">
+            <h3>Loving Vincent</h3>
+        </a>
+        <p>Convert your videos into moving paintings of your choice</p>
+    </div>
+	<!-- Project 5 -->
+    <div style="text-align: center;">
+        <a href="https://devpost.com/software/rescue-shark" style="text-decoration: none;">
+            <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/638/714/datas/original.JPG" alt="Rescue Shark Thumbnail" style="width: auto; border-radius: 10px; height: 200px;">
+            <h3>Rescue Shark</h3>
+        </a>
+        <p>Built an SOS application for Truck Drivers - Won a MLH Hackathon for "Most Creative Use of Twilio"</p>
+    </div>
+    
+</div>
+
 
 <!-- ---
 ## Invited talks
