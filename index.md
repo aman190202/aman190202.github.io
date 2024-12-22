@@ -27,7 +27,15 @@ layout: default
 	</div></td>
 </tr>
 
-A CS Grad student at Brown studying [Computer Vision](https://browncsci1430.github.io) and [Computer Graphics](https://cs1230.graphics). My primary research interests are Computer Vision and Graphics, particulary in the emerging field of Inverse rendering via Neural Fields such as [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+A CS Grad student at Brown studying Visual Computing and AI. My primary research interests are Computer Vision and Graphics, particulary in the emerging field of Inverse rendering via Neural Fields such as [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+
+#### Spending this winter-break studying/attempting :
+
+1. Probabilistic Machine Learning
+2. Interactivate Web-GL based game
+3. Implementing Structure-from-Motion
+4. Video Diffusion Models
+5. Dynamic NeRFs
 
 ### Updates : 
 1. Begun my Masters at Brown University, USA [2024-Present]
