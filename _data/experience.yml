@@ -1,4 +1,10 @@
-
+# ---------------------------------------------------------------
+# Brown Visual Computing
+# ---------------------------------------------------------------
+- year: "2025"
+  logo: "./assets/BVC_logo.png"
+  title: "Graduate Researcher : Dynamic Gaussian Splatting & NeRFs"
+  description : Novel View Synthesis for Dynamic Scenes
 # ---------------------------------------------------------------
 # Indian Institue of Science
 # ---------------------------------------------------------------
