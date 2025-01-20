@@ -29,6 +29,8 @@ layout: default
 
 A CS Grad student at Brown studying Visual Computing and AI. My primary research interests are Computer Vision and Graphics, particulary in the emerging field of Inverse rendering via Neural Fields such as [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
+#### I have been also exploring how transformers work in the last few weeks & how they are being used in vision and language models  (Jan. 2025)
+
 #### I am actively looking for Summer 2025 Internships! 
 
 
