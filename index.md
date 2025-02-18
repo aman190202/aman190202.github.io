@@ -27,16 +27,9 @@ layout: default
 	</div></td>
 </tr>
 
-A CS Grad student at Brown studying Visual Computing and AI. My primary research interests are Computer Vision and Graphics, particulary in the emerging field of Inverse rendering via Neural Fields such as [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
-
-#### I have been also exploring how transformers work in the last few weeks & how they are being used in vision and language models  (Jan. 2025)
-
-#### I am actively looking for Summer 2025 Internships! 
+I'm a Master's student in Computer Science at Brown University, specializing in **Visual Computing and AI**. I am advised by [Dr. James Tompkin](https://cs.brown.edu/people/jtompkin/), and my current research focuses on **dynamic scene reconstruction**  for rendering. Previously, I worked at **IISc Bangalore**, exploring similar fields. My primary interests lie in **Computer Vision and Graphics**, with a focus on **Inverse Rendering** via **Neural Fields**, including [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
 
-### Updates : 
-1. Begun my Masters at Brown University, USA [2024-Present]
-2. Completed Undergrad at SRM University, India [2020-2024]
 
 ---
 ## Experience
