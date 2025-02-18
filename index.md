@@ -27,7 +27,9 @@ layout: default
 	</div></td>
 </tr>
 
-I'm a Master's student in Computer Science at Brown University, specializing in **Visual Computing and AI**. I am advised by [Dr. James Tompkin](https://cs.brown.edu/people/jtompkin/), and my current research focuses on **dynamic scene reconstruction**  for rendering. Previously, I worked at **IISc Bangalore**, exploring similar fields. My primary interests lie in **Computer Vision and Graphics**, with a focus on **Inverse Rendering** via **Neural Fields**, including [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+I'm a Master's student in Computer Science at Brown University, specializing in **Visual Computing and AI**. I am advised by [Dr. James Tompkin](https://jamestompkin.com), and my current research focuses on **dynamic scene reconstruction**  for rendering. 
+
+My primary interests lie in **Computer Vision and Graphics**, with a focus on **Inverse Rendering** via **Neural Fields**, including [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
 
 
