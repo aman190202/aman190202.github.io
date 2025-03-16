@@ -4,7 +4,7 @@ layout: default
 
 ## About Me
 <tr>
-    <td> <img class="profile-picture" src="me2.gif"></td>
+    <td> <img class="profile-picture" src="me.png" style="width: 25%; height: auto;"></td>
 	<!-- <td>
 		<iframe src="https://antimatter15.com/splat/?url=https://aman190202.github.io/model-5.splat" width="300" height="300" style="border:none;  float: right;"></iframe>
 	</td> -->
@@ -26,7 +26,7 @@ layout: default
 			<br>
 	</div></td>
 </tr>
-
+<br>
 I'm a Master's student in Computer Science at Brown University, specializing in **Visual Computing and AI**. I am advised by [Dr. James Tompkin](https://jamestompkin.com), and my current research focuses on **dynamic scene reconstruction**  for rendering. 
 
 My primary interests lie in **Computer Vision and Graphics**, with a focus on **Inverse Rendering** via **Neural Fields**, including [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
@@ -151,17 +151,23 @@ My primary interests lie in **Computer Vision and Graphics**, with a focus on **
 
 <style>
     body {
-        background-color: #121212; /* Dark background */
-        color: #ffffff; /* Light text color */
+        background-color: #ffffff !important; /* Set background to white */
+        color: #000000; /* Change text color to black for visibility */
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #ffffff; /* Ensure all headings are visible on dark background */
+        color: #000000; /* Ensure all headings are visible on white background */
+    }
+    .page-title {
+        color: orange; /* Set your title color to orange */
+    }
+    .header-name {
+        color: orange; /* Set your name color to orange */
     }
     .link-box {
         position: relative;
         display: inline-block;
         padding: 10px;
-        border: 2px solid #ffffff;
+        border: 2px solid #000000;
         border-radius: 8px;
         transition: transform 0.3s;
         width: 100%;
@@ -171,11 +177,12 @@ My primary interests lie in **Computer Vision and Graphics**, with a focus on **
         transform: scale(1.05); /* Pop-up effect */
     }
     a {
-        color: #4da6ff; /* Light blue for links */
-        text-decoration: none;
+        color: #4da6ff; /* Default link color (light blue) */
+        text-decoration: none; /* Remove underline */
     }
     a:hover {
-        text-decoration: underline;
+        color: orange; /* Change link color to orange on hover */
+        text-decoration: underline; /* Optional: add underline on hover */
     }
     .project-container {
         display: grid;
@@ -208,25 +215,25 @@ My primary interests lie in **Computer Vision and Graphics**, with a focus on **
 
     /* Experience section styling */
     .paper-list {
-        background: linear-gradient(270deg, #1e1e1e, #2e2e2e, #1e1e1e);
+        background: linear-gradient(270deg, #f5f5f5, #e5e5e5, #f5f5f5);
         background-size: 400% 400%;
         animation: gradientAnimation 15s ease infinite; /* Apply animation */
-        color: #ffffff; /* Text color */
+        color: #000000; /* Text color */
         border-radius: 8px;
         padding: 10px;
         margin-bottom: 15px;
         transition: transform 0.3s;
-        border: 1px solid #333333;
+        border: 1px solid #cccccc;
     }
     .paper-list:hover {
         transform: scale(1.02);
     }
     .paper-title {
-        color: #ffffff !important;
+        color: #000000 !important;
         font-weight: bold;
     }
     .paper-authors, .paper-pub, .paper-links {
-        color: #cccccc !important;
+        color: #333333 !important;
     }
     .paper-logo {
         background-color: transparent !important;
@@ -234,31 +241,33 @@ My primary interests lie in **Computer Vision and Graphics**, with a focus on **
     
     /* Fix for any tables in the document */
     table {
-        background-color: #1e1e1e !important;
-        color: #ffffff !important;
+        background-color: #ffffff !important;
+        color: #000000 !important;
         border-collapse: collapse;
     }
     td, th {
-        color: #ffffff !important;
+        color: #000000 !important;
         padding: 8px;
-        background-color: #1e1e1e !important;
+        background-color: #ffffff !important;
     }
     
     /* Profile section */
     .profile-doc, .profile-picture {
-        color: #ffffff !important;
+        color: #000000 !important;
     }
     
-    /* Override any default styles */
-    * {
-        color-scheme: dark;
+    /* Resume section styling */
+    .resume-section, .resume-section * {
+        color: #000000 !important; /* Ensure all text in the resume section is black */
     }
     
     /* Fix for section backgrounds */
     section, div, article {
-        background-color: #121212 !important;
+        background-color: #ffffff !important;
     }
 </style>
+
+
 
 ## Projects
 
@@ -336,3 +345,4 @@ May, 6th 2024 | Machine Learning Coffee Seminar | Finnish Center for Artificial 
 ---
 <br>
  Template Credits : <a href="https://maturk.github.io">Matias Turkulainen</a>
+
