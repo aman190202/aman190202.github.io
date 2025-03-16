@@ -149,54 +149,178 @@ My primary interests lie in **Computer Vision and Graphics**, with a focus on **
 	</div></td>
 </tr> -->
 
+<style>
+    body {
+        background-color: #121212; /* Dark background */
+        color: #ffffff; /* Light text color */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff; /* Ensure all headings are visible on dark background */
+    }
+    .link-box {
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid #ffffff;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .link-box:hover {
+        transform: scale(1.05); /* Pop-up effect */
+    }
+    a {
+        color: #4da6ff; /* Light blue for links */
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .project-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-image {
+        width: auto;
+        border-radius: 10px;
+        height: 200px;
+        max-width: 100%;
+    }
+    
+    /* Dynamic background for experience section */
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Experience section styling */
+    .paper-list {
+        background: linear-gradient(270deg, #1e1e1e, #2e2e2e, #1e1e1e);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite; /* Apply animation */
+        color: #ffffff; /* Text color */
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+        border: 1px solid #333333;
+    }
+    .paper-list:hover {
+        transform: scale(1.02);
+    }
+    .paper-title {
+        color: #ffffff !important;
+        font-weight: bold;
+    }
+    .paper-authors, .paper-pub, .paper-links {
+        color: #cccccc !important;
+    }
+    .paper-logo {
+        background-color: transparent !important;
+    }
+    
+    /* Fix for any tables in the document */
+    table {
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+        border-collapse: collapse;
+    }
+    td, th {
+        color: #ffffff !important;
+        padding: 8px;
+        background-color: #1e1e1e !important;
+    }
+    
+    /* Profile section */
+    .profile-doc, .profile-picture {
+        color: #ffffff !important;
+    }
+    
+    /* Override any default styles */
+    * {
+        color-scheme: dark;
+    }
+    
+    /* Fix for section backgrounds */
+    section, div, article {
+        background-color: #121212 !important;
+    }
+</style>
+
 ## Projects
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-	<!-- Project 1 -->
-    <div style="text-align: center;">
-        <a href="https://github.com/aman190202/Clouds" style="text-decoration: none;">
-            <video controls style="width: 100%; border-radius: 10px;">
- 				 <source src="assets/FullHD.mp4" type="video/mp4">Your browser does not support the video tag.
-			</video>
-            <h3>Volummetric Rendering for Clouds & Procuderal Terrain, on OpenMP</h3>
-        </a>
+<div class="project-container">
+    <!-- Project 1 -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://github.com/aman190202/Clouds" style="text-decoration: none; color: inherit;">
+                <video controls style="width: 100%; border-radius: 10px; max-height: 200px;">
+                    <source src="assets/FullHD.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>
+                <h3>Volummetric Rendering for Clouds & Procuderal Terrain, on OpenMP</h3>
+            </a>
+        </div>
         <p>
-			Designed and implemented a custom ray-marcher and ray-tracer from scratch to render realistic clouds and generate procedural terrain. The rendered scene includes dynamic interactions with point lights, creating visually accurate and immersive effects.
+            Designed and implemented a custom ray-marcher and ray-tracer from scratch to render realistic clouds and generate procedural terrain. The rendered scene includes dynamic interactions with point lights, creating visually accurate and immersive effects.
         </p>
     </div>
-	<!-- Project 2 -->
-    <div style="text-align: center;">
-        <a href="https://github.com/aman190202/small_NeRF" style="text-decoration: none;">
-            <img src="assets/img_0_21.png" alt="Neural Radiance Fields" style="width: auto; border-radius: 10px; height: 200px;">
-            <h3>Implemented NeRFs</h3>
-        </a>
-        <p>Implemented the <a href="https://arxiv.org/abs/2003.08934">Neural Radiance Fields</a> paper by Ben Mildenhall et al. ; Removed heirarical sampling to reduce complexity while maintaining PSNR scores.</p>
-    </div>
-    <!-- Project 3 -->
-    <div style="text-align: center;">
-        <a href="https://github.com/aman190202/neural_fields_bvc" style="text-decoration: none;">
-            <img src="assets/output2.png" alt="Neural Fields Thumbnail" style="width: auto; border-radius: 10px; height: 200px;">
-            <h3>Neural Fields with Encoding</h3>
-        </a>
-        <p>A comparison of different encoding methods for 2D inputs</p>
-    </div>
-    <!-- Project 4 -->
-    <div style="text-align: center;">
-        <a href="https://github.com/aman190202/LovingVincentt" style="text-decoration: none;">
-            <img src="assets/ezgif.com-gif-maker.gif" alt="Loving Vincent Thumbnail" style="width: auto; border-radius: 10px; height: 200px;">
-            <h3>Loving Vincent</h3>
-        </a>
-        <p>Convert your videos into moving paintings of your choice</p>
-    </div>
-	<!-- Project 5 -->
-    <div style="text-align: center;">
-        <a href="https://devpost.com/software/rescue-shark" style="text-decoration: none;">
-            <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/638/714/datas/original.JPG" alt="Rescue Shark Thumbnail" style="width: auto; border-radius: 10px; height: 200px;">
-            <h3>Rescue Shark</h3>
-        </a>
-        <p>Built an SOS application for Truck Drivers - Won a MLH Hackathon for "Most Creative Use of Twilio"</p>
+    
+    <!-- Project 2 -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://github.com/aman190202/small_NeRF" style="text-decoration: none; color: inherit;">
+                <img src="assets/img_0_21.png" alt="Neural Radiance Fields" class="project-image">
+                <h3>Implemented NeRFs</h3>
+            </a>
+        </div>
+        <p>Implemented the <a href="https://arxiv.org/abs/2003.08934">Neural Radiance Fields</a> paper by Ben Mildenhall et al.; Removed heirarical sampling to reduce complexity while maintaining PSNR scores.</p>
     </div>
     
+    <!-- Project 3 -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://github.com/aman190202/neural_fields_bvc" style="text-decoration: none; color: inherit;">
+                <img src="assets/output2.png" alt="Neural Fields Thumbnail" class="project-image">
+                <h3>Neural Fields with Encoding</h3>
+            </a>
+        </div>
+        <p>A comparison of different encoding methods for 2D inputs</p>
+    </div>
+    
+    <!-- Project 4 -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://github.com/aman190202/LovingVincentt" style="text-decoration: none; color: inherit;">
+                <img src="assets/ezgif.com-gif-maker.gif" alt="Loving Vincent Thumbnail" class="project-image">
+                <h3>Loving Vincent</h3>
+            </a>
+        </div>
+        <p>Convert your videos into moving paintings of your choice</p>
+    </div>
+    
+    <!-- Project 5 -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://devpost.com/software/rescue-shark" style="text-decoration: none; color: inherit;">
+                <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/638/714/datas/original.JPG" alt="Rescue Shark Thumbnail" class="project-image">
+                <h3>Rescue Shark</h3>
+            </a>
+        </div>
+        <p>Built an SOS application for Truck Drivers - Won a MLH Hackathon for "Most Creative Use of Twilio"</p>
+    </div>
 </div>
 
 
