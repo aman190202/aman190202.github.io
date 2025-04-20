@@ -12,7 +12,7 @@ layout: default
 		Sc.M. @ Brown University <br>
         Visual Computing & AI<br>
 		<br> 
-		<a href="mailto:amanag1@brown.edu">
+		<a href="mailto:amanag@brown.edu">
 			<i class="fa fa-envelope" aria-hidden="true"></i> amanag@brown.edu</a> <br> 
 		<a href="https://github.com/aman190202">
 			<i class="fa fa-github" aria-hidden="true"></i> Github </a> <br> 
