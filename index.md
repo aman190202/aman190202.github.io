@@ -274,7 +274,25 @@ My primary interests lie in **Computer Vision and Graphics**, with a focus on **
 
 ## Projects
 
+
+
+
 <div class="project-container">
+    <!-- Project 0 -->
+    <div class="project-item">
+        <div class="link-box">
+            <a href="https://github.com/aman190202/cuda" style="text-decoration: none; color: inherit;">
+                <video controls style="width: 100%; border-radius: 10px; max-height: 200px;">
+                    <source src="assets/100000.mov" type="video/mp4">Your browser does not support the video tag.
+                </video>
+                <h3>Explosion</h3>
+            </a>
+        </div>
+        <p>
+            Designed and implemented a volumetric path tracer to render explosions with millions of lights
+        </p>
+    </div>
+
     <!-- Project 1 -->
     <div class="project-item">
         <div class="link-box">
