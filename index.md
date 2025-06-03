@@ -9,6 +9,7 @@ layout: default
 		<iframe src="https://antimatter15.com/splat/?url=https://aman190202.github.io/model-5.splat" width="300" height="300" style="border:none;  float: right;"></iframe>
 	</td> -->
     <td><div class="profile-doc">
+        3D Foundational Models @ <a href="https://coolant.earth">Coolant Climate</a> <br>
 		Sc.M. @ Brown University <br>
         Visual Computing & AI<br>
 		<br> 
@@ -26,12 +27,10 @@ layout: default
 			<br>
 	</div></td>
 </tr>
-<br>
-I'm a Master's student in Computer Science at Brown University, specializing in **Visual Computing and AI**. I am advised by [Dr. James Tompkin](https://jamestompkin.com), and my current research focuses on **dynamic scene reconstruction**  for rendering. I am concurrently working on using language embeddings to supervise motion in dynamic scenes for reconstruction.
 
-My primary interests lie in **Computer Vision and Graphics**, with a focus on **Inverse Rendering** via **Neural Fields**, including [NeRFs](https://www.matthewtancik.com/nerf) and [Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+I'm a Master's student in Computer Science at Brown University, specializing in **Visual Computing and AI**. I am advised by [Dr. James Tompkin](https://jamestompkin.com), and my current research focuses on **dynamic scene reconstruction**  for rendering. 
 
-<span style="color: red;">**I am packing my bags and moving to San Fransisco this Summer - Seeking internship opportunities in Vision, Graphics, AI or anywhere i get to write a shit ton of C++ code!**</span>
+<span style="color: green;">I am currently interning at Coolant Climate, working on 3D Foundational Models essential for reforestation & aforestation</span>
 
 
 
