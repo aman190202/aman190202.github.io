@@ -1,4 +1,12 @@
 # ---------------------------------------------------------------
+# Coolant Climate
+# ---------------------------------------------------------------
+- year: "2025"
+  logo: "./assets/coolant.jpeg"
+  title: "3D Research & Development Intern"
+  description : Trained and finetuned geometric foundational models for large scale reconstruction of forest sites & optimized production pipeline by rewriting I/O components.
+
+# ---------------------------------------------------------------
 # Brown Visual Computing
 # ---------------------------------------------------------------
 - year: "2025"
