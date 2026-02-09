@@ -452,11 +452,14 @@
         function toggleTheme() {
             document.body.classList.toggle('light');
             const btn = document.querySelector('.theme-btn');
+            const bg = document.querySelector('.bg');
             if (document.body.classList.contains('light')) {
                 btn.innerHTML = '&#9790;';
+                bg.style.backgroundImage = "url('bg.jpg')";
                 localStorage.setItem('theme', 'light');
             } else {
                 btn.innerHTML = '&#9788;';
+                bg.style.backgroundImage = "url('bg2.png')";
                 localStorage.setItem('theme', 'dark');
             }
         }
@@ -464,6 +467,8 @@
         if (localStorage.getItem('theme') !== 'dark') {
             document.body.classList.add('light');
             document.querySelector('.theme-btn').innerHTML = '&#9790;';
+        } else {
+            document.querySelector('.bg').style.backgroundImage = "url('bg2.png')";
         }
 
         /* ── Load and render papers from JSON ── */
