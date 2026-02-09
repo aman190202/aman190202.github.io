@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aman agarwal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+            background: #111;
+            color: #d0d0d0;
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+
+        /* ── Background painting ── */
+        .bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: url('bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* ── Right-side panel ── */
+        .panel {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 500px;
+            min-height: 100vh;
+            background: rgba(20, 20, 20, 0.88);
+            padding: 2.5rem 2.8rem;
+            overflow-y: auto;
+        }
+
+        /* ── Header / Name ── */
+        .site-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .site-header h1 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #e8e8e8;
+            letter-spacing: 0.01em;
+        }
+
+        .site-header .icon-gif {
+            height: 1.6rem;
+            width: auto;
+            vertical-align: middle ;
+        }
+
+        /* ── Navigation ── */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.3rem 1rem;
+            margin-bottom: 2.2rem;
+            font-size: 0.88rem;
+        }
+
+        nav a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        nav a.active {
+            color: #ddd;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .theme-btn {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 0;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .theme-btn:hover {
+            color: #ddd;
+        }
+
+        /* ── Content ── */
+        .content h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #e8e8e8;
+            margin-bottom: 1.4rem;
+        }
+
+        .content p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            color: #c0c0c0;
+        }
+
+        .content strong {
+            color: #e0e0e0;
+            font-weight: 600;
+        }
+
+        .content a {
+            color: #a0b8d0;
+            text-decoration: none;
+            transition: color 0.2s, border-color 0.2s;
+            border-bottom: 1px solid transparent;
+        }
+
+        .content a:hover {
+            color: #c0d8f0;
+            border-bottom-color: #a0b8d0;
+        }
+
+        .note {
+            margin-top: 1.5rem;
+            font-size: 0.88rem;
+            color: #999;
+            font-style: italic;
+        }
+
+        .note strong {
+            color: #bbb;
+            font-style: normal;
+        }
+
+        .note a {
+            color: #a0b8d0;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .note a:hover {
+            border-bottom-color: #a0b8d0;
+        }
+
+        /* ── Section headings ── */
+        .section-title {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #e0e0e0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* ── Paper item ── */
+        .paper-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .paper-item .paper-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        .paper-item .paper-title a {
+            color: #e0e0e0;
+            border-bottom: 1px solid transparent;
+        }
+
+        .paper-item .paper-title a:hover {
+            color: #c0d8f0;
+            border-bottom-color: #a0b8d0;
+        }
+
+        .paper-item .paper-authors {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.15rem;
+            line-height: 1.5;
+        }
+
+        .paper-item .paper-venue {
+            font-size: 0.85rem;
+            color: #a0b8d0;
+            font-style: italic;
+            margin-top: 0.1rem;
+        }
+
+        .paper-item .paper-desc {
+            font-size: 0.88rem;
+            color: #aaa;
+            margin-top: 0.25rem;
+            line-height: 1.55;
+        }
+
+        /* ── Project item ── */
+        .project-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .project-item .project-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #e0e0e0;
+        }
+
+        .project-item .project-title a {
+            color: #e0e0e0;
+            border-bottom: 1px solid transparent;
+        }
+
+        .project-item .project-title a:hover {
+            color: #c0d8f0;
+            border-bottom-color: #a0b8d0;
+        }
+
+        .project-item .project-desc {
+            font-size: 0.88rem;
+            color: #aaa;
+            margin-top: 0.2rem;
+            line-height: 1.55;
+        }
+
+        .project-item .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.35rem;
+        }
+
+        .project-item .tag {
+            font-size: 0.72rem;
+            color: #888;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 0.1rem 0.45rem;
+            border-radius: 3px;
+            letter-spacing: 0.02em;
+        }
+
+        /* ── Light theme ── */
+        body.light .bg {
+            filter: brightness(1.1);
+        }
+
+        body.light .panel {
+            background: rgba(252, 250, 245, 0.92);
+        }
+
+        body.light .site-header h1 {
+            color: #1a1a1a;
+        }
+
+        body.light nav a {
+            color: #666;
+        }
+
+        body.light nav a:hover,
+        body.light nav a.active {
+            color: #1a1a1a;
+        }
+
+        body.light .theme-btn {
+            color: #666;
+        }
+
+        body.light .theme-btn:hover {
+            color: #1a1a1a;
+        }
+
+        body.light .content h2 {
+            color: #1a1a1a;
+        }
+
+        body.light .content p {
+            color: #3a3a3a;
+        }
+
+        body.light .content strong {
+            color: #1a1a1a;
+        }
+
+        body.light .content a {
+            color: #3b6fa0;
+        }
+
+        body.light .content a:hover {
+            color: #1d4f80;
+            border-bottom-color: #3b6fa0;
+        }
+
+        body.light .note {
+            color: #777;
+        }
+
+        body.light .note strong {
+            color: #555;
+        }
+
+        body.light .section-title {
+            color: #1a1a1a;
+            border-bottom-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light .paper-item .paper-title,
+        body.light .paper-item .paper-title a {
+            color: #1a1a1a;
+        }
+
+        body.light .paper-item .paper-authors {
+            color: #666;
+        }
+
+        body.light .paper-item .paper-venue {
+            color: #3b6fa0;
+        }
+
+        body.light .paper-item .paper-desc {
+            color: #555;
+        }
+
+        body.light .project-item .project-title,
+        body.light .project-item .project-title a {
+            color: #1a1a1a;
+        }
+
+        body.light .project-item .project-desc {
+            color: #555;
+        }
+
+        body.light .project-item .tag {
+            color: #666;
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            body {
+                justify-content: center;
+            }
+
+            .panel {
+                max-width: 100%;
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* ── Scrollbar ── */
+        .panel::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .panel::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .panel::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 3px;
+        }
+
+        .panel::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="panel">
+        <header class="site-header">
+            <h1>aman agarwal</h1>
+            <img src="me2.gif" alt="" class="icon-gif">
+        </header>
+
+        <nav>
+            <a href="/" class="active">home</a>
+            <!-- <a href="/blog">blog</a> -->
+            <!-- <a href="/projects">projects</a> -->
+            <a href="https://x.com/aman_shakesbeer" target="_blank" rel="noopener">x</a>
+            <a href="https://github.com/aman190202" target="_blank" rel="noopener">github</a>
+            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=APjjwuZzv5PnF55uKSYi5q5KIlQkTsuOkL-zUXqxDIo5pztSqwPHC00-pgkK5y7EPzWrpmTYJL9KMwbbWFG2eg&user=D5nSPo4AAAAJ" target="_blank" rel="noopener">scholar</a>
+            <a href="https://www.linkedin.com/in/aman190202/" target="_blank" rel="noopener">linkedin</a>
+            <!-- <a href="/resume.pdf" target="_blank">resume</a> -->
+            <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">&#9788;</button>
+        </nav>
+
+        <main class="content">
+            <h2>hi, i'm aman!</h2>
+
+            <p>
+                I'm a master's student in computer science at <strong>Brown University</strong>, specializing in
+                <strong>visual computing</strong> and <strong>AI</strong>, advised by
+                <a href="https://jamestompkin.com/" target="_blank" rel="noopener">Dr. James Tompkin</a>.
+            </p>
+            <p>
+                My research is driven by the goal of building tools that geo-localize captured images and multimodal data using
+                <strong>3D geometric cues</strong>, with the intention of supporting <strong>investigative journalism</strong>.
+            </p>
+            <p>
+                More broadly, I enjoy building  systems that induce <strong>spatial intelligence</strong> from 2D visual data.
+                I am a founding engineer at <strong><a href="https://invisionlabs.ai">InVision Labs</a></strong>, where we are developing tools for creating
+                <strong>digital twins</strong> from smartphone-captured videos.
+            </p>
+
+            <p>
+                reach me at <a href="mailto:amanag@brown.edu">amanag@brown.edu</a>
+            </p>
+
+            <!-- Papers — loaded from data/papers.json -->
+            <h3 class="section-title">papers</h3>
+            <div id="papers-list"></div>
+
+            <!-- Projects — loaded from data/projects.json -->
+            <h3 class="section-title">projects</h3>
+            <div id="projects-list"></div>
+
+            <p class="note">
+                Inspired by <a href="https://www.eigenron.com">Ron</a> :)
+            </p>
+        </main>
+    </div>
+
+    <script>
+        /* ── Theme toggle ── */
+        function toggleTheme() {
+            document.body.classList.toggle('light');
+            const btn = document.querySelector('.theme-btn');
+            if (document.body.classList.contains('light')) {
+                btn.innerHTML = '&#9790;';
+                localStorage.setItem('theme', 'light');
+            } else {
+                btn.innerHTML = '&#9788;';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        if (localStorage.getItem('theme') !== 'dark') {
+            document.body.classList.add('light');
+            document.querySelector('.theme-btn').innerHTML = '&#9790;';
+        }
+
+        /* ── Load and render papers from JSON ── */
+        async function loadPapers() {
+            try {
+                const res = await fetch('data/papers.json');
+                const papers = await res.json();
+                const container = document.getElementById('papers-list');
+
+                if (papers.length === 0) {
+                    container.innerHTML = '<p style="font-size:0.88rem;color:#777;">no papers yet.</p>';
+                    return;
+                }
+
+                container.innerHTML = papers.map(p => {
+                    const titleHtml = p.url
+                        ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
+                        : p.title;
+
+                    const venueHtml = p.venue
+                        ? `<div class="paper-venue">${p.venue}</div>`
+                        : '';
+
+                    const descHtml = p.description
+                        ? `<div class="paper-desc">${p.description}</div>`
+                        : '';
+
+                    return `
+                        <div class="paper-item">
+                            <div class="paper-title">${titleHtml}</div>
+                            <div class="paper-authors">${p.authors}</div>
+                            ${venueHtml}
+                            ${descHtml}
+                        </div>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.warn('Could not load papers.json:', e);
+            }
+        }
+
+        /* ── Load and render projects from JSON ── */
+        async function loadProjects() {
+            try {
+                const res = await fetch('data/projects.json');
+                const projects = await res.json();
+                const container = document.getElementById('projects-list');
+
+                if (projects.length === 0) {
+                    container.innerHTML = '<p style="font-size:0.88rem;color:#777;">no projects yet.</p>';
+                    return;
+                }
+
+                container.innerHTML = projects.map(p => {
+                    const titleHtml = p.url
+                        ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
+                        : p.title;
+
+                    const tagsHtml = (p.tags && p.tags.length > 0)
+                        ? `<div class="project-tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>`
+                        : '';
+
+                    return `
+                        <div class="project-item">
+                            <div class="project-title">${titleHtml}</div>
+                            <div class="project-desc">${p.description}</div>
+                            ${tagsHtml}
+                        </div>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.warn('Could not load projects.json:', e);
+            }
+        }
+
+        /* ── Init ── */
+        loadPapers();
+        loadProjects();
+    </script>
+</body>
+</html>
