@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Explosion",
+    "description": "Designed and implemented a volumetric path tracer to render explosions with millions of lights.",
+    "url": "https://github.com/aman190202/cuda",
+    "tags": ["cuda", "rendering", "path-tracing"]
+  },
+  {
+    "title": "Volumetric Rendering for Clouds & Procedural Terrain",
+    "description": "Custom ray-marcher and ray-tracer from scratch to render realistic clouds and generate procedural terrain with dynamic point light interactions.",
+    "url": "https://github.com/aman190202/Clouds",
+    "tags": ["openmp", "ray-marching", "rendering"]
+  },
+  {
+    "title": "Implemented NeRFs",
+    "description": "Implemented Neural Radiance Fields by Ben Mildenhall et al. Removed hierarchical sampling to reduce complexity while maintaining PSNR scores.",
+    "url": "https://arxiv.org/abs/2003.08934",
+    "tags": ["nerf", "deep-learning", "3d"]
+  },
+  {
+    "title": "Neural Fields with Encoding",
+    "description": "A comparison of different encoding methods for 2D inputs.",
+    "url": "",
+    "tags": ["neural-fields", "deep-learning"]
+  },
+  {
+    "title": "Loving Vincent",
+    "description": "Convert your videos into moving paintings of your choice.",
+    "url": "",
+    "tags": ["style-transfer", "video", "deep-learning"]
+  },
+  {
+    "title": "Rescue Shark",
+    "description": "Built an SOS application for truck drivers. Won a MLH Hackathon for 'Most Creative Use of Twilio'.",
+    "url": "",
+    "tags": ["hackathon", "twilio", "mobile"]
+  }
+]
